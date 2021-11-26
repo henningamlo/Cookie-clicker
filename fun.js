@@ -2,6 +2,7 @@ const COK = document.getElementById("cok")
 const NUM = document.getElementById("num")
 const PL = document.getElementById("pl")
 const CPSD = document.getElementById("cp")
+const clickAmount = document.getElementByID("")
 let copese;
 
 function updateDisplay() {
@@ -59,7 +60,7 @@ setInterval(() =>{
 },1000/100)
 
 COK.addEventListener("click", (e) => {
-    cookies++
+    cookies += clickAmount;
     updateDisplay();
 });
 
