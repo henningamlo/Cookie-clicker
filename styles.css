@@ -1,0 +1,26 @@
+body {
+    margin:30px;
+}
+
+#cp {
+    font-size: 1em;
+    color:grey;
+}
+
+#num {
+    font-size: 4em;
+}
+
+#cok{
+    bottom: 10%;
+} 
+
+.pl {
+    font-size: 1em;
+    color:grey;
+    list-style: none;
+}
+h2 {
+    color:black
+    
+}
