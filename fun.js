@@ -64,16 +64,19 @@ COK.addEventListener("click", (e) => {
 });
 
 function buySlaves() {
-    if (cookies >= prices.slaves ) {
-        cookies -=prices.slaves
-        incomeSources.slaves++
-    } else {
-        console.log("You dont have enough cookies");
-    }
+            if (cookies >= prices.slaves ) {
+                prices.slaves = prices.slaves * 1.10;
+                cookies -=prices.slaves
+                incomeSources.slaves++
+            } else {
+                console.log("You dont have enough cookies");
+            }
+    
     updateDisplay();
 }
 function buySummoners() {
     if (cookies >= prices.summoners ) {
+        prices.summoners = prices.summoners * 1.10;
         cookies -=prices.summoners
         incomeSources.summoners++
     } else {
@@ -83,6 +86,7 @@ function buySummoners() {
 }
 function buyRobots() {
     if (cookies >= prices.robot ) {
+        prices.robot = prices.robot * 1.10;
         cookies -=prices.robot
         incomeSources.robot++
     } else {
@@ -92,6 +96,7 @@ function buyRobots() {
 }
 function buyFactories() {
     if (cookies >= prices.factories ) {
+        prices.factories = prices.factories * 1.10;
         cookies -=prices.factories
         incomeSources.factories++
     } else {
@@ -101,15 +106,11 @@ function buyFactories() {
 }
 function buyVolcanoes() {
     if (cookies >= prices.volcanoes ) {
+        prices.volcanoes = prices.volcanoes * 1.10;
         cookies -=prices.volcanoes
         incomeSources.volcanoes++
     } else {
         console.log("You dont have enough cookies");
     }
     updateDisplay();
-}
-
-function gC(x) {
-    cookies +=  x;
-    updateDisplay();
-}
+};
